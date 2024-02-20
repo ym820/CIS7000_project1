@@ -1,0 +1,30 @@
+
+Loading meta from meta_all_ascii_chars.pkl...
+Traceback (most recent call last):
+  File "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/train.py", line 437, in <module>
+    losses = estimate_loss()
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/train.py", line 376, in estimate_loss
+    logits, loss = model(X, Y)
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/model.py", line 193, in forward
+    x = block(x)
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/model.py", line 116, in forward
+    x = x + self.mlp(self.ln_2(x))
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/yikaimao/Library/Python/3.9/lib/python/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/model.py", line 100, in forward
+    x = new_gelu(x)
+  File "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/model.py", line 25, in new_gelu
+    return 0.5 * x * (1.0 + torch.tanh(math.sqrt(2.0 / math.pi) * (x + 0.044715 * torch.pow(x, 3.0))))
+KeyboardInterrupt

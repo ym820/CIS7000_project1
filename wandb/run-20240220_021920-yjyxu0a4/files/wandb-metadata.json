@@ -1,0 +1,47 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.9.6",
+    "heartbeatAt": "2024-02-20T07:19:21.183611",
+    "startedAt": "2024-02-20T07:19:20.778938",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "config/addition_bal/train_addition_bal.py",
+        "--ckpt_path_name=ckpt_10000.pt",
+        "--out_dir=out/addition_plain",
+        "--data_type=text",
+        "--data_format=plain",
+        "--dataset=bal",
+        "--train_data_path=train_3digit_10000.txt",
+        "--eval_addition=True",
+        "--start=FILE:data/bal/test_10000.txt"
+    ],
+    "state": "running",
+    "program": "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1/train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/ym820/CIS7000_project1.git",
+        "commit": "7e489fa72963f3f335ea61f1a99e56343b6ae88e"
+    },
+    "email": "yikai.mao@outlook.com",
+    "root": "/Users/yikaimao/Desktop/CIS_7000/CIS7000_project1",
+    "host": "Yikais-MacBook-Air.local",
+    "username": "yikaimao",
+    "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 11.186084747314453
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
